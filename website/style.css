@@ -17,34 +17,48 @@ body{
 }
 
 .holder{
-
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
 }
 
 .entry{
-    background: rgba(59, 74, 107, .4);
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 10rem;
 }
 
 #entryHolder{
-
+    align-items: center;
+    height: auto;
+    padding: 2em;
 }
 
 #date{
-
+    font-size: 12mm;
+    color: #444;
 }
 
 #temp{
-
+    font-size: 12mm;
+    color: #444;
 }
 
 #content{
-
+    font-size: 12mm;
+    color: #444;
 }
 
 .headline {
 
 }
 .title{
-
+    font-size: 16mm;
+    color:black;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
@@ -73,6 +87,7 @@ button{
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    position: relative;
 }
 h1{
     font-size: 36px;
@@ -83,6 +98,7 @@ textarea{
     color: #f0d43a;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    display: inline;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
